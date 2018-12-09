@@ -13,33 +13,33 @@ class Photo extends React.Component {
   render() {
       const { image } = this.props;
       return (
-      <>
-        <Card className="grid-card">
-          <CardActionArea>
-            <CardMedia className="grid-card-media"
-              src={image.link}
-              image={image.link}
-              title={image.description}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="caption" component="legend">
-                {image.link}
-              </Typography>
-              <Typography component="p">
-              <br/><span className="b">Description: </span><br/>{image.description}
-              </Typography>
-              <Typography component="p">
-                <br/><span className="b">Creation: </span><Moment format="YYYY-MM-DD HH:mm">{image.creationDate}</Moment>
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions className="pa0">
-            <Button size="small" color="primary">
-              Expand
-            </Button>
-          </CardActions>
-        </Card>
-      </>
+        <>
+          <Card className="grid-card">
+            <CardActionArea>
+              <CardMedia className="grid-card-media"
+                src={image.link}
+                image={image.link}
+                title={image.description}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="caption" component="legend">
+                  {image.link}
+                </Typography>
+                <Typography component="p">
+                <br/><span className="b">Description: </span><br/>{image.description}
+                </Typography>
+                <Typography component="p">
+                  <br/><span className="b">Creation: </span><Moment format="YYYY-MM-DD HH:mm">{image.creationDate}</Moment>
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions className="pa0">
+              <Button size="small" color="primary">
+                Expand
+              </Button>
+            </CardActions>
+          </Card>
+        </>
       );
     }
 }
