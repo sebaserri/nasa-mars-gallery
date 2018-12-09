@@ -32,7 +32,7 @@ class Photo extends React.Component {
                 <br/><span className="b">Creation: </span><Moment format="YYYY-MM-DD HH:mm">{image.creationDate}</Moment>
               </Typography>
             </CardContent>
-          </CardActionArea>b
+          </CardActionArea>
           <CardActions className="pa0">
             <Button size="small" color="primary">
               Expand
